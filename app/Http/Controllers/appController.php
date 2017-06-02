@@ -88,8 +88,8 @@ class appController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    private function findWord($f, $c, $m)
+    public function findWord(Request $request)
     {
-        //
+        dd($request);
     }
 }

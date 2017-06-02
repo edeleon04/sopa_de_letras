@@ -82,7 +82,7 @@
                     Sopa de letras
                 </div>       
                 <div class="links">
-                    <a href="{{ route('findWord.appController') }}">Iniciar</a>
+                    <a href="{{ route('app.index') }}">Iniciar</a>
                 </div>         
             </div>
         </div>

@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('findWord', 'findWord@appController')
-    ->name('findWord.appController');
+Route::post('findWord', 'appController@findWord');
 
 Route::resource('app', 'appController');

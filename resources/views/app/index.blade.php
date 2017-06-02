@@ -28,7 +28,7 @@
                 <div class="title m-b-md">
                     Bienvenid@
                 </div> 
-                <form action="{{ route('app.index') }}" method="post" id="submit_form">
+                <form action="{{ url('/findWord') }}" method="POST" id="submit_form">
                     <label class="control-label">Seleccione archivo de prueba</label>
                     <input id="input-1" type="file" class="file">      
                     <input class="btn btn-default" type="submit" id="submit" value="Buscar 'OIE'">  
@@ -44,13 +44,13 @@
 
                 $.ajax({
                     type: "POST",
-                    url: "findWord",
+                    url: "/findWord",
                     data: formData,
                     processData: false,
                     contentType: false,
                 })
                 .done(function(msg) {
-                    alert("hola");
+                    alert("hola2");
                 })
                 .fail(function(data) {
                     alert("error en carga");
